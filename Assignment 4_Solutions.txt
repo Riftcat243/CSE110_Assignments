@@ -1,0 +1,393 @@
+import java.util.Scanner;
+public class Task_1
+{
+             public static void main(String[] args)
+       {   
+                
+            Scanner sc = new Scanner(System.in);
+          // Task_1(a)
+    int i = 24;
+    while(i>=-6)
+    { 
+            if(i==-6)
+          System.out.println(i);
+           else {
+          System.out.print(i+",");
+                  }
+         i-=6;
+    }
+                // Task-1(b)
+         int j = -10;
+      while(j<=20)
+      { 
+         if(j==20) 
+         {
+      System.out.println(j);
+         }
+    else {
+    System.out.print(j+",");
+          }
+    j+=5;
+         }
+   }
+}  
+
+
+
+
+
+import java.util.Scanner;
+public class Task_2
+{
+  public static void main(String[] args)
+  {   Scanner sc = new Scanner(System.in);
+ 
+    //Task_2
+    System.out.println("Enter number of inputs.");
+    int N = sc.nextInt();
+    int sum =0;
+    
+    for(int i=1;i<=N;i++)
+       { 
+      System.out.println("Enter a Number.");
+      int n = sc.nextInt();
+      
+      sum = sum + n;     
+            }
+    System.out.println("Sum = "+sum);
+    double average = sum/(double)N;
+    System.out.println("Average = " + average);
+   
+  }
+
+}  
+
+
+
+
+
+
+import java.util.Scanner;
+public class Task_3
+{
+  public static void main(String[] args)
+  {   
+     Scanner sc = new Scanner(System.in);
+     
+   // Task-3
+    while(true)
+     { 
+       System.out.println("Enter any integer number :-");
+     int n = sc.nextInt();
+           if(n>=0)
+              { 
+             int Sqr = n*n;
+            System.out.println("Square of number = "+Sqr);
+                }
+            else
+               {
+         System.out.println("Invalid number!!");          
+          break;
+                  }
+          }
+    
+  }
+
+}  
+
+
+
+
+
+import java.util.Scanner;
+public class Task_4
+{
+  public static void main(String[] args)
+  {  
+     Scanner sc = new Scanner(System.in);
+     
+   // Task-4
+    System.out.println("Enter a number to find its divisors : ");
+    int a = sc.nextInt();
+    System.out.println("The divisors are as follows :-  ");
+    for(int i=1;i<=a;i++)
+    {
+             if(a%i==0)
+            {
+         System.out.println(i);
+                }
+
+      }
+  
+   }
+  
+}  
+
+
+
+
+
+
+import java.util.Scanner;
+public class Task_5
+{
+  public static void main(String[] args)
+  {   
+     Scanner sc = new Scanner(System.in);
+     
+   // Task-5
+     int j =1;
+     System.out.println("Enter any number of inputs :- ");
+     int i = sc.nextInt();
+     int negative = 0;
+     int positive = 0;
+    while(j<=i)
+     { 
+       System.out.println("Enter any integer number :-");
+     int n = sc.nextInt();
+             if(n>=0)
+                {            
+            System.out.println("Number you entered is Positive which is : "+n);
+             positive++;
+                   }
+              else
+                 {
+           System.out.println("Number you entered is Negative which is :  "+n);          
+                 negative++;
+                    }
+             j++;
+          }
+       System.out.println(); 
+      System.out.println("Number of Non-Negative numbers you entered : " + positive);     
+      System.out.println("Number of Negative numbers you entered : " + negative);     
+  }
+
+}  
+
+
+
+
+
+
+import java.util.Scanner;
+public class Task_6
+{
+  public static void main(String[] args)
+  {   
+     Scanner sc = new Scanner(System.in);
+     
+   // Task-6
+     int i =1;
+     int sum =0;
+     System.out.println("Enter the number of terms n : ");  
+     int n = sc.nextInt();
+     int j = 1;
+         while(i<=n)
+         {               
+                if(j%2!=0)
+                  {
+                      System.out.println(j);  
+                      sum = sum+j;
+                      j+=2;
+                        }
+              i++;
+             }
+         
+         System.out.println("Sum of Odd Natural numbers upto "+ n + " terms is :- "+ sum);
+                   
+  }
+
+}  
+
+
+
+
+
+import java.util.Scanner;
+public class Task_7
+{
+  public static void main(String[] args)
+  {   
+     Scanner sc = new Scanner(System.in);
+     
+   // Task-7
+     int i =1;
+     int sum =0;
+         while(i<=10)
+         {                               
+              System.out.println(i+". Enter any number : "); 
+              int n = sc.nextInt();
+              sum = sum+n;  
+              System.out.println("Sum = "+sum);
+              i++;
+             }
+      
+  }
+
+}  
+
+
+
+
+
+import java.util.Scanner;
+public class Task_8
+{
+  public static void main(String[] args)
+  {   
+     Scanner sc = new Scanner(System.in);
+     
+   // Task-8
+     int i =0;
+     System.out.println("Enter the number of terms n to start finding :- ");  
+     int n = sc.nextInt();
+         while(i<=n)
+         {                     
+                  if(i%5==0 && i%3!=0)
+                      {
+                    System.out.println(i);  
+                           }  
+              i++;
+             }
+      System.out.println("Upto "+ n+ " Following are the numbers divisible by 5 and not divisible by 3.");  
+  }
+
+}  
+
+
+
+
+
+import java.util.Scanner;
+public class Task_9
+{
+  public static void main(String[] args)
+  {   
+     Scanner sc = new Scanner(System.in);
+     
+   // Task-9
+     int i =1;
+     int digits = 1;
+     System.out.println("Enter any number to count its digits : ");  
+     int n = sc.nextInt();
+         while(i<=n)
+         {                               
+                  if(n/10!=0)
+                      {
+                     digits++;  
+                           } 
+                  n = n/10;
+              i++;
+             }
+      System.out.println("Number of digits is =  " + digits); 
+
+    }
+
+}  
+
+
+
+
+
+import java.util.Scanner;
+       public class Task_10
+  {
+        public static void main(String[] args)
+       {   
+                                   Scanner sc = new Scanner(System.in);
+     
+   // Task-10
+     int i =1;
+     int digits = 1;
+     System.out.println("Enter any number to count its digits and also write its digits serially :- ");  
+     int n = sc.nextInt();
+     int m = n;
+         while(i<=n)
+         {                               
+                  if(n/10!=0)
+                      {
+                       digits++;  
+                           } 
+                     n = n/10;
+                i++;
+             }
+        for (int j =1;j<=digits;j++)
+        {
+              n =m/ (int)Math.pow(10,digits-j);
+            
+                   if (n/10!=0)
+                     {
+                      i=n%10;
+                               if(j==digits)
+                               { 
+                                  System.out.println(" "+ i +" ");
+                               }
+                               else
+                               {
+                                  System.out.print(" "+ i + ","+" ");
+                               }
+                         continue;
+                            }
+                   
+              System.out.print(" "+ n + ","); 
+         
+         
+                }
+             System.out.println("The number you entered which is arranged serially by digits.");                
+        }
+
+  }  
+
+
+
+
+
+
+import java.util.Scanner;
+public class Task_11{
+ public static void main(String[] args) {
+  Scanner sx =new Scanner(System.in);
+  int n = sx.nextInt();
+  int real =0;
+   int paisi_div=0;
+   int h=1;
+  for(h=1;h<=n;h++)
+  {
+     int primo=n%h;
+    
+        if (primo==0)
+           {    
+                  if(h<n)
+                     {    
+                     real+=h;
+                          }
+                  paisi_div++;
+                       }
+                            }
+             
+        if(paisi_div==2)   
+                {
+                    System.out.println("Found da prime number yoo!!..");
+                }
+             else
+                     {
+                       System.out.println("Nope not a  prime number...");    
+                            }
+                      if(real==n)
+                        {
+                           System.out.println("Got the perfectooo number!!!!!!!");
+              
+                             }
+                           else
+                           {
+                                    System.out.println("Nope. Its not a perfectoo number...");
+                           }
+     }
+ }
+
+
+
+
+-------------------------------------------------------------End of the line------------------------------------------------------
+
+

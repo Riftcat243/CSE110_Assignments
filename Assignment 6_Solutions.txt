@@ -1,0 +1,311 @@
+//Task-1
+
+import java.util.Scanner;
+public class Task_1{
+  public static void main(String[] args){
+    Scanner sr = new Scanner(System.in);
+    System.out.println("Enter any string to convert everything to UPPER case :- /`");
+    String sgin=sr.nextLine();
+    String emp ="";
+    for(int lin=0;lin<sgin.length();lin++)
+    {
+      int aci = (int)sgin.charAt(lin);
+        if(aci>96 && aci<123)
+      {  aci-=32;
+        emp+=(char)aci;
+      }
+      else
+      {
+        emp+=(char)aci;
+      }
+    }
+    System.out.println(emp);
+  }
+} 
+
+//Task-2
+
+import java.util.Scanner;
+public class Task_2{
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter any string to check if its a palindrome or not. :- /`");
+    String sn=scan.nextLine();
+    String rd ="";
+    for(int i=sn.length()-1;i>-1;i--)
+    {
+      rd += sn.charAt(i);
+    }
+    System.out.println(sn.equals(rd));
+  }
+}  
+  
+//Task-3
+
+import java.util.Scanner;
+public class Task_3{
+  public static void main(String[] args){
+    Scanner si=new Scanner(System.in);
+    System.out.println("Enter any string with split special character :- /`");
+    String sg=si.nextLine();
+    System.out.println("Enter your split character  :- /`");
+    String st =si.nextLine();
+    for(int i=0;i<sg.length();i++)
+    {
+       if(sg.charAt(i)==st.charAt(0))
+       {
+        System.out.println();
+       }
+       else
+       {
+         System.out.print(sg.charAt(i));
+       }
+     }
+    System.out.println();
+  }
+}
+
+//Task-4
+
+import java.util.Scanner;
+public class Task_4
+{
+   public static void main(String[] args)
+   {
+      Scanner ss=new Scanner(System.in);
+      System.out.println("Enter any string of your choice to see reverse of it :-/`");
+      String ohmm=ss.nextLine();
+     for(int i=ohmm.length()-1;i>-1;i--)
+      {
+      System.out.print(ohmm.charAt(i));
+       }
+    
+   }
+}  
+  
+//Task-5
+
+import java.util.Scanner;
+public class Task_5
+{
+  public static void main(String[] args)
+  {
+    Scanner skan=new Scanner(System.in);
+    System.out.println("Enter the code for unlocking the TREASURE Chest :- /`");
+    String tr_cd=skan.nextLine();
+    int vowelC=0;
+    int consonentC=0;
+    for(int h=0;h<tr_cd.length();h++)
+    {
+      int ac = tr_cd.codePointAt(h);
+       if(ac>64 && ac<91 ||ac>96 && ac<123)
+       {
+          char g =(char)ac;
+          if(g=='a'||g=='A' ||g=='e'||g=='E'||g=='i'||g=='I'||g=='o'||g=='O'||g=='u'||g=='U') 
+          {
+            vowelC++;
+            }
+          else
+          {
+            consonentC++;
+            }
+         }
+      }
+    if(vowelC>0 && consonentC>0)
+    {
+        if(vowelC%3==0 && consonentC%5==0)
+        {
+         System.out.println("Aarrr!! Matie Plunderrr!!!");
+         }
+       else
+        {
+         System.out.println("Bliimyy! Nou Plunderrr.. Blast it...");
+        }
+      }
+    else
+    {
+     System.out.println("Bliimyy! Nou Plunderrr.. Blast it...");
+     }
+  }
+}  
+
+//Task-6
+
+import java.util.Scanner;
+public class Task_6
+{
+  public static void main(String[] args)
+  {
+    Scanner su = new Scanner(System.in);
+    System.out.println("Enter any string on your mind and see its reverse words :-");
+    String srin=su.nextLine();
+    String revs = "";
+    int o = srin.length();
+    for(int u = o-1;u>-1;u--)
+    {
+         if(' '==srin.charAt(u))
+         {
+              for(int v=u+1;v<o;v++)
+              {
+                revs += srin.charAt(v);
+                 }
+               o=u;
+               revs+=" ";
+           }
+          else if(u==0)
+          {
+              for(int v=u;v<o;v++)
+              {
+                revs += srin.charAt(v);
+                 }
+            }
+         }
+    System.out.println(revs);
+    }
+ }
+
+//Task-7
+
+import java.util.Scanner;
+public class Task_7{
+  public static void main(String[] args){
+    Scanner sy = new Scanner(System.in);
+    System.out.println("Enter any lowercase string to start removing duplicates:-/`");
+    String strin1 = sy.nextLine();
+    System.out.println("Enter another string :-");
+    String strin2 = sy.nextLine();
+    String res = (strin1 + strin2);
+    String result = "";
+    boolean dup=false;
+    for(int w = 0;w < res.length(); w++)
+     { 
+       dup = false;
+       for(int q=0;q<res.length();q++)
+       {  
+          if(q==w)
+          {
+            continue;
+           }
+          else if(res.charAt(q)==res.charAt(w) )
+          {
+            dup=true;
+            break;
+           }
+          
+         }
+       if(dup==false)
+       {
+         result+=res.charAt(w);
+       }
+        
+       }
+    System.out.println(result.toUpperCase());
+  }
+} 
+
+//Task-8
+
+import java.util.Scanner;
+public class Task_8
+{
+  public static void main(String[] args)
+  {
+    Scanner sy = new Scanner(System.in);
+    System.out.println("Enter any string to convert it into aLtErNaTiNg caps format :-/`");
+    String in =sy.nextLine();
+    String res ="";
+    char qt ='a';
+    for(int t = 0;t < in.length(); t++)
+    {  
+       int d=in.codePointAt(t);
+       if(d>64 && d<91 || d>96 && d<123)
+       {
+          if(t==0 && d>64 && d<91)
+          {
+           res+=(char)(d+32);
+           } 
+          else if(t==0 && d>96 && d<123)
+          {
+            res+=(char)d;
+            }
+         else if(d>64 && d<91)
+         {
+            if(qt>96 && qt<123)
+            {
+             res+=(char)d;
+             }
+            else
+            {
+             res+=(char)(d+32);
+             }
+          }
+         else if(d>96 && d<123)
+         {
+           if(qt>96 && qt<123)
+           {
+            res+=(char)(d-32);
+            }
+           else
+           {
+            res+=(char)d;
+            }
+          }
+       qt=res.charAt(t);
+        }
+      else
+      {
+        res+=(char)d;
+      }
+    }
+    System.out.println(res);
+  } 
+}
+
+//Task-9
+
+import java.util.Scanner;
+public class Task_9
+{
+   public static void main(String[] args)
+   {
+      Scanner specops = new Scanner(System.in);
+      System.out.println("Enter your password to verify its strength :-/`");
+      String incode=specops.nextLine();
+      Boolean lent = false, UC = false, lc = false, dig = false, specChar = false;
+      if(incode.length()>7)
+      {
+       lent=true;
+        }
+      for(int q=0;q<incode.length();q++)
+      {
+         int s =incode.codePointAt(q);
+         if(s>64 && s<91)
+         {
+          UC=true;
+          }
+         else if(s>96 && s<123)
+         {
+           lc=true;
+          }
+         else if(s>47 && s<58)
+         {
+           dig=true;
+          }
+         else if(s!=32)
+         {
+           specChar=true;
+          }
+       }
+      if(lent && UC && lc && dig && specChar)
+      {
+        System.out.println("True");
+      }
+      else
+      {
+        System.out.println("False");
+      }
+   }
+}    
+
+
+//--------------------------------------------------------- x ---------------------------------------------------------------------

@@ -1,0 +1,248 @@
+// Task - 1
+import java.util.Scanner;
+public class Task_1
+  {
+    public static void main(String[] args)
+    {
+       Scanner sr = new Scanner(System.in);
+       System.out.println("Enter number of terms./`");
+       int n = sr.nextInt();
+       int nom =2;
+       for(int i = 0;i<n;)
+       {
+         Boolean primo =true;
+         for(int j =2;j<nom;j++)
+         {
+           if(nom%j==0)
+           {
+             primo=false;
+             break;
+           }
+         }
+         if(primo==true)
+         {
+           System.out.println(nom);
+           i++;
+         }
+         nom++;
+       }
+  }
+}
+
+
+
+
+//Task - 2
+
+import java.util.Scanner;
+public class Task_2
+  {
+    public static void main(String[] args)
+    {
+        Scanner sn = new Scanner(System.in);
+        System.out.println("Enter any number upto which Y will be calculated.");
+        int n = sn.nextInt();
+        int sum =0;
+      for(int j =1;j<=n;j++)
+     {
+        for(int i =1;i<=j;i++)
+         {
+            sum-=i;
+           }
+      }
+     System.out.println("Upto "+n+" terms sum Y will be = "+sum);
+    }   
+}
+
+
+//Task - 3
+
+import java.util.Scanner;
+public class Task_3
+  {
+    public static void main(String[] args)
+    {
+          Scanner si = new Scanner(System.in);
+          for(int i =1;true;i++)
+          {  
+             System.out.println("Enter your number to start scanning.");
+             int n = si.nextInt();
+             if(n%2==0)
+             {  int ds =0;
+             for (int j =1;j<=n;j++)
+             {
+                
+                 if(n%j==0)
+                 {
+                    ds++;
+                 }
+             }
+           System.out.println("Number of divisors of "+n+" are "+ds);
+             }
+             else
+             { 
+                System.out.println("Entered odd number.Error/!/.Program is not responding..");
+                 break;
+             }
+      }   
+   }
+}
+
+
+//Task - 4
+
+import java.util.Scanner;
+public class Task_4
+  {
+    public static void main(String[] args)
+    {
+          Scanner sa = new Scanner(System.in);
+          System.out.println("Enter the test cases number to start testing./");
+            int in = sa.nextInt();
+          for(int i =1;i<=in;i++)
+           {     
+             int sum=0;
+             System.out.println("Enter the value of X" +" for test case-->"+i);
+             int X = sa.nextInt();
+             System.out.println("Enter the value of Y" +" for test case-->"+i);
+           int Y = sa.nextInt();
+                for(int j=1;j<=Y;j++)
+                 {   
+                      if(X%2==0)
+                      {
+                     X++;
+                         }
+                    sum+=X;
+                    X+=2;
+                  }
+              System.out.println("Summation of test case-->"+i+ " is = "+sum);
+          }
+   }
+}
+
+
+//Task - 5
+
+import java.util.Scanner;
+public class Task_5
+  {
+    public static void main(String[] args)
+    {
+          Scanner sy = new Scanner(System.in);
+          System.out.println("Enter the length of a rectangle comprised of numbers./");
+          int length = sy.nextInt();
+          System.out.println("Enter the width of the rectangle./");
+          int width = sy.nextInt();
+          for(int i =1;i<=width;i++)
+           {     
+
+                for(int j=1;j<=length;j++)
+                   {   
+                     System.out.print(j+" ");
+                   }
+               System.out.println();
+           }
+  }
+}
+
+
+//Task - 6
+
+import java.util.Scanner;
+public class Task_6
+  {
+    public static void main(String[] args)
+    {
+          Scanner sz = new Scanner(System.in);
+          System.out.println("Enter the height of right aligned triangle./");
+          int height = sz.nextInt();
+          for(int i =1;i<=height;i++)
+           {     
+                for(int spc=height-i;spc>0;spc--)
+                   {   
+                   System.out.print("   ");
+                   }
+                for(int j=1;j<=i;j++)
+                   {   
+                   System.out.print(j+" ");
+                   }
+                System.out.println();
+           }
+  }
+}
+
+//Task - 7
+
+import java.util.Scanner;
+public class Task_7
+  {
+    public static void main(String[] args)
+    {
+          Scanner sz = new Scanner(System.in);
+          System.out.println("Enter the height of isoscales triangle composed of numbers./");
+          int height = sz.nextInt();
+          for(int i =1;i<=height;i++)
+           {     
+                for(int spc = height-i;spc>0;spc--)
+                   {   
+                   System.out.print("   ");
+                   }
+                for(int j=1;j<=i;j++)
+                   {   
+                   System.out.print(j+" ");
+                   }
+                  for(int k =i+1;k<2*i;k++)
+                      {  
+                             System.out.print(k+" ");
+                      }
+              System.out.println();
+           }
+  }
+}
+
+
+//Task - 8
+
+import java.util.Scanner;
+public class Task_8
+  {
+    public static void main(String[] args)
+    {
+          Scanner sz = new Scanner(System.in);
+          System.out.println("Enter the starting of range of armstrong number./");
+          int start = sz.nextInt();
+          System.out.println("Enter the ending of range./");
+          int end = sz.nextInt();
+          for(int i =start;i<=end;i++)
+           {     
+                 if(i==start)
+                 {
+                    System.out.println("Armstrong numbers -->");
+                       }
+                  int sum=0;
+                  int dig =0;
+                  int x = i;
+                  for(int j=1;x!=0;j++)
+                  {
+                          dig++;
+                           x/=10;
+                   }
+                  x=i;
+                  for(int p=1;p<=dig;p++)
+                  {    
+                       x%=10;
+                       sum+=(int)Math.pow(x,dig);
+                       x=i;
+                       x/=(int)Math.pow(10,p);
+                      
+                  }
+                  if(sum==i)
+                  {
+                       System.out.println(i);
+                  }
+           }
+  }
+}
+
+
+-------------------------------------------------------- O ------------------------------------------------------------------------

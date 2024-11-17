@@ -1,0 +1,344 @@
+//Task- 1
+  
+public class Task1
+ {
+  public static void main(String[] args)
+    {
+       int hungry;      //OK
+  
+       int 2AB;         //variable name cannot start with numbers.
+  
+      int 312.2;       //variable name cannot be only numbers or float numbers.
+      
+      int MOBILE;     //OK
+  
+      int "Ans";      //" " cannot be used in variable name.
+       
+      int $30;       //OK
+  
+     int Yes/No;      //  / cannot be used as variable name.
+   
+    int student-id; //  - cannot be used as variable name.
+   
+     int A+3;         // no + can be used as variable name.
+   
+     int 'X';         // ' ' cannot be used as variable name.
+   
+     int return;       //return is a keyword of java so it cannot be used as variable name.
+   
+    }
+   
+       } 
+
+
+ 
+//Task- 2.1
+
+public class Task2_1{
+  public static void main(String[] args){ 
+     int a = 84;
+     System.out.println(a);
+     }
+         } 
+
+
+
+//Task - 2.2
+
+public class Task2_2{
+  public static void main(String[] args){ 
+     int a = 84;
+     int b = 16;
+     int sum = a+b;
+     System.out.println("The sum is = " +  sum);
+     }
+         }
+
+
+//Task - 2.3
+
+public class Task2_3{
+  public static void main(String[] args){ 
+         int a = 84;
+         int b = 16;
+         int product =a*b;
+       float quotient = (float)a/b;
+       System.out.println("The product is = " + product);
+       System.out.println("The quotient is = " + quotient);
+     }
+         }
+
+
+
+//Task - 2.4
+
+public class Task2_4{
+  public static void main(String[] args){ 
+      double d1 = 4.54d;
+      double d2 = 9.55d;
+      System.out.println(d1);
+      double sum = d1+d2;
+      System.out.println("The sum is = " +  sum);     
+       double product =d1*d2;
+       double quotient = d1/d2;
+     System.out.printf("The product is = "+"%.2f  \n" , product);
+      System.out.printf("The quotient is = "+"%.2f   \n" , quotient);
+     }
+         }
+
+
+
+//Task - 2.5
+
+public class Task2_5{
+  public static void main(String[] args){ 
+    
+        int x = 4;
+        double d3 = 9.55;
+        System.out.println(x);
+        System.out.println(d3);
+        double sum = x+d3;
+        System.out.println("The sum is = " + sum);     
+       double product =x*d3;
+       double quotient = d3/x;
+       System.out.println("The product is = " + product);
+       System.out.println("The quotient is = " + quotient);
+     }
+         }
+
+
+
+//Task - 2.6
+
+public class Task2_6{
+  public static void main(String[] args){ 
+
+       String  s1  = "Java programming ";
+       String  s2  = "is Mediocre and out of 100 i give...  ";
+        System.out.println(s1);
+        System.out.println(s2);
+         String  s3  = s1 + s2;
+         System.out.println(s3); 
+         int z = 45;
+         System.out.println( s3 + z + ".");   
+     }
+         }
+
+
+
+//Task - 3
+public class Task3{
+  public static void main(String[] args){ 
+     byte r = 4;
+     float circum = (2*3.1416f*r);
+     float area = 3.1416f*r*r;
+     System.out.println(circum);
+     System.out.println(area);
+     }
+         }
+
+
+
+//Task - 4
+
+public class Task4{
+  public static void main(String[] args){ 
+    int z = 4298;
+    int res = 4298%100;
+    System.out.println("Last 2 digit is = " + res);
+     }
+         }
+
+
+
+//Task - 5
+
+public class Task5{
+  public static void main(String[] args){ 
+      int  inch = 1000;
+    float metre =inch*0.0254f;
+    System.out.println("Length in metre will be = " + metre + " metre");
+     }
+         }
+
+
+
+//Task - 6(a)
+
+public class Task6a{
+  public static void main(String[] args){ 
+    
+   byte i = 7;
+   byte j = 5;
+    byte k = i;
+    i=j;
+    j=k;
+    System.out.println(i+" & "+j); 
+  
+     }
+         }
+
+
+
+//Task - 6(b)
+
+public class Task6b{
+  public static void main(String[] args){
+ 
+     int i = 7;
+     int j = 5;
+     i=i*j;  //i=35
+     j = i/j;  //35/5=7
+     i=i/j;  //35/7=5
+    System.out.println(i+ " & " +j);
+  
+     }
+         }
+
+
+
+
+//Task - 7
+
+public class Task7{
+  public static void main(String[] args){ 
+    int min =3456789;
+    int  yrcomp = 365*24*60;
+    float  quo = (float) min/yrcomp;
+    short days =(short) ((quo%1)*365);
+    byte years =(byte) quo;
+    System.out.println(years +" years " + days + " days ");
+     }
+         }
+
+
+//Task - 8
+
+public class Task8{
+  public static void main(String[] args){ 
+      int a = 2;     
+      int b = 5;
+      int c  = 8;
+      int d =(2*b*(c-a)/3)+7;
+      System.out.println("The value of d after calculation = " + d);
+     }
+         }
+
+
+
+//Task - 9
+
+public class Task9{
+  public static void main(String[] args){ 
+      int n = 5;
+          int p1 = n*1;
+          int p2 = n*2;
+          int p3 = n*3;
+          int p4 = n*4;
+          int p5 = n*5;
+          int p6 = n*6;
+          int p7 = n*7;
+          int p8 = n*8;
+          int p9 = n*9;
+          int p10 = n*10;
+            System.out.println(n + " x1 = " + p1);
+            System.out.println(n + " x 2 = " + p2);
+            System.out.println(n + " x 3 = " + p3);
+            System.out.println(n + " x 4 = "+ p4);
+            System.out.println(n + " x 5 = " + p5);
+            System.out.println(n +" x 6 = " + p6);
+            System.out.println(n +" x 7 = " + p7);
+            System.out.println(n + " x 8 = " + p8);
+            System.out.println(n + " x 9 = " + p9);
+            System.out.println(n + " x 10 = " + p10);
+     }
+         }
+
+
+
+//Task - 10
+
+public class Task10{
+  public static void main(String[] args){ 
+     int n =100;
+     int a =1;
+     int d =1;
+     int  l = a + (n-1)*d;
+     int nS = (n/2)*(a+l);
+     System.out.print("Sum of first 100 positive numbers = "+nS);
+     }
+         }
+
+
+
+//Task - 11
+
+public class Task11{
+  public static void main(String[] args){ 
+     float a = 4.5f;
+     float b = 9.5f;
+     float c =(float) Math.sqrt(a*a + b*b);
+     float sinA = a/c;
+     float cosA = b/c;
+     float sinB = b/c; 
+     float cosB = a/c;
+       System.out.println("SinA = "+sinA);
+       System.out.println("CosA = "+cosA);
+       System.out.println("SinB = "+sinB);
+       System.out.println("CosB = "+cosB);
+     }
+         }
+
+
+
+//Task - 12
+
+public class Task12{
+  public static void main(String[] args){ 
+     int std_id = 24301541;
+      std_id = (std_id%100);
+       System.out.println(std_id%10);
+       System.out.println(std_id/10);
+     }
+         }
+
+
+
+//Task - 13
+
+public class Task13{
+  public static void main(String[] args){ 
+   int distance_covered = 1541;
+     float time_hr = 5 + (56f/60) + (23/3600);
+     float velocity_km = distance_covered/(time_hr*1000f);
+     float velocity_miles = (distance_covered/time_hr)/(1609f);
+        System.out.printf("The velocity in km/h is = "+ "%.3f"+" km/h  \n",velocity_km );
+        System.out.printf("The velocity in miles/h is = "+"%.3f"+" miles/h  \n" ,velocity_miles);
+   
+     }
+         }
+
+
+
+//Task - 14
+
+public class Task14{
+  public static void main(String[] args){ 
+    int a = 8;
+    int  b = 3;
+      float s = (float)Math.sqrt((a/2 *a/2)+b*b);
+      float circumference= 6*s;
+      float area = (float)(1.5*Math.sqrt(3) *s*s);
+         System.out.printf("Cirmcumference of the hexagon is = "+"%.1f \n" ,circumference);
+         System.out.printf("Area of hexagon is =  "+"%.2f \n",area);
+           
+     }
+         }
+
+------------------------------------------------------------ X -------------------------------------------------------------------
+
+
+
+
+
+               
